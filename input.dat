@@ -1,0 +1,92 @@
+# Mesh
+
+Nr      31
+Nzee      65
+Ntheta  1
+
+DomainCylR  30.0e-3 
+DomainCylLen 80.0e-3 
+
+# Geometry
+
+WallThick 3.0e-3
+
+InletAperture 1.0e-3
+InletRadius 5.0e-3
+ChamberInletStart 0.0
+InletLen 8.0e-3
+
+ChamberRadius 25.0e-3
+ChamberLen 50.0e-3
+ChamberExtractRadius 3.0e-3
+
+phiChamber = 0.0
+phiExtract = 0.0
+
+ExtractGap 4.0e-3
+ExtractThick 2.0e-3
+ExtractrAperture 2.0e-3
+
+posFC 75.0e-3
+
+# Plasma
+
+initial_E_Density 5.0e13
+initialIonDensity 5.0e13
+
+kTe 1.0
+kTi_O2 0.01
+
+# Gas
+
+inletPressure_O2 50.0e-3
+inletPressure_N2 8.0e-3
+
+inletTemperature 300.0
+
+bufferDensity 1.0e13
+
+#####################################
+# RF antenna
+#####################################
+RFEnabled 	=	1
+rfPower       = 75
+rfFrequency   = 13.56e6
+rfCurrent     = 12
+
+rfTurns       = 6
+rfLayers      = 1
+
+rfRadius      = 0.028
+rfPitch       = 0.006
+rfStartZ      = 0.010
+rfLayerSpacing = 0.003
+
+
+#####################################
+# Static magnetic field
+#####################################
+StaticFieldEnabled = 1
+
+TargetB       = 0.02
+
+StaticCurrent = 5
+
+StaticTurns   = 120
+
+StaticRadius  = 0.032
+
+StaticSpacing = 0.060
+
+StaticConfiguration = 1
+
+#####################################
+# Numerics
+#####################################
+
+dtElectron = 1e-11
+
+dtIon = 1e-9
+
+dtNeutral = 1e-8
+
